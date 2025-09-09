@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Sushi Delicioso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/stylesMenu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: url("../img/fentradas.webp");
+    background-size: cover;
+        }
+    </style>
+</head>
+<body class="text-white">
+    <header>
+        <div>
+            <h1 class="titulo">Bebidas</h1>
+        </div>
+    </header>
+
+    <!-- Mobile Overlay -->
+    <div class="overlay" onclick="toggleMobileNav()"></div>
+    <!-- Mobile Nav Button -->
+    <button id="menuBtn" class="mobile-nav-button md:hidden" onclick="toggleMobileNav()">☰ Menú</button>
+
+    <!-- Mobile Nav Menu -->
+    <nav class="mobile-nav">
+        <img class="menulogo" src="../img/logo.webp" alt="onna bushi">
+        <div class="titulomenu">
+            <h1>ONNA BUSHI</h1>
+            <button class="cerrarmenu" onclick="toggleMobileNav()">x</button>
+        </div>
+
+        <ul>
+            <li><a href="entradas.html" onclick="toggleMobileNav()">Entrantes</a></li>
+            <li><a href="rollos.html" onclick="toggleMobileNav()">Rollos</a></li>
+            <li><a href="ramen.html" onclick="toggleMobileNav()">Ramen</a></li>
+            <li><a href="combinaciones.html" onclick="toggleMobileNav()">Combinaciones</a></li>
+            <li><a href="promo.html" onclick="toggleMobileNav()">Promo</a></li>
+            <li><a href="bebidas.html" onclick="toggleMobileNav()">Bebidas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Desktop Vertical Nav -->
+    <nav class="vertical-nav md:block">
+        <img class="menulogo" src="../img/logo.webp" alt="onna bushi">
+        <div class="titulomenu">
+            <h1>ONNA BUSHI</h1>
+        </div>
+        <ul>
+            <li><a href="entradas.html">Entrantes</a></li>
+            <li><a href="rollos.html">Rollos</a></li>
+            <li><a href="ramen.html">Ramen</a></li>
+            <li><a href="combinaciones.html">Combinaciones</a></li>
+            <li><a href="promo.html">Promo</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <!--GYOZAS-->
+        <div class="plato">
+            <div class="info">
+                <h2 class="nombre">GYOZAS</h2>
+                <h2 class="nombre">$ 6,50</h2>
+            </div>
+
+            <div class="platos">
+                <div>
+                    <p class="desc">
+                        Camarón o Cerdo, y Julianas de vegetales, Alga Wakame, Salsa de la casa y caviar
+                    </p>
+                    <p class="unidades">(8 unidades)</p>
+                </div>
+                <img style="height: 100px;" class="imgplato" src="../img/gyozas.webp" alt="">
+            </div>
+        </div>
+
+        <!--ESFERAS DE CANGREJO GRATINADAS-->
+        <div style="height: 200px;" class="plato">
+            <div class="info">
+                <h2 style="font-size: 13px;" class="nombre">ESFERAS DE CANGREJO GRATINADAS</h2>
+                <h2 class="nombre">$ 5,75</h2>
+            </div>
+
+            <div class="platos">
+                <div>
+                    <p class="desc">
+                        esferas tempurizadas de 25g de cangrejo con salsa de la casa, relleno de queso crema, gratinadas y caviar
+                    </p>
+                    <p class="unidades">(6 unidades)</p>
+                </div>
+                <img class="imgplato" src="../img/esferas.webp" alt="">
+            </div>
+        </div>
+
+
+        <!--SASHIMI-->
+        <div style="height: 220px;" class="plato">
+            <div class="info">
+                <h2 class="nombre">SASHIMI</h2>
+                <h2 class="nombre">$ 6,50</h2>
+            </div>
+
+            <div class="platos">
+                <div>
+                    <p class="desc">
+                        salmón fresco, marinado en un delicioso aliño de limón semipicante, soya y ajonjolí, acompañado de una porción de caviar
+                    </p>
+                    <p class="unidades">(6 unidades)</p>
+                </div>
+                <img class="imgplato" src="../img/sashimi.webp" alt="">
+            </div>
+        </div>
+
+
+        <!--CANASTAS DE CEVICHE-->
+        <div class="plato">
+            <div class="info">
+                <h2 class="nombre">CANASTAS DE CEVICHE</h2>
+                <h2 class="nombre">$ 5,50</h2>
+            </div>
+
+            <div class="platos">
+                <div>
+                    <p class="desc">
+                        5 Canastas de verde, mix de ceviche, Salsa Acevichada, brunua de ají criollo y cilantro
+                    </p>
+                    <p class="unidades">(5 unidades)</p>
+                </div>
+                <img class="imgplato" src="../img/canasta.webp" alt="">
+            </div>
+        </div>
+
+
+        <!--WANTAN CON PULPO GRATINADO-->
+        <div class="plato">
+            <div class="info">
+                <h2 style="font-size: 15px;" class="nombre">WANTAN CON PULPO GRATINADO</h2>
+                <h2 class="nombre">$ 5,50</h2>
+            </div>
+
+            <div class="platos">
+                <div>
+                    <p class="desc">
+                        5 Masas de wantan, mix de pulpo y salsa japonesa gratinada
+                    </p>
+                    <p class="unidades">(5 Bocados)</p>
+                </div>
+                <img class="imgplato" src="../img/wantan.webp" alt="">
+            </div>
+        </div>
+
+        <div>
+            <p style="color: transparent;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, consequuntur mollitia pariatur</p>
+        </div>
+
+    </div>
+    
+    </div>
+
+    
+
+
+    
+    <script>
+    function toggleMobileNav() {
+        const mobileNav = document.querySelector('.mobile-nav');
+        const overlay = document.querySelector('.overlay');
+        const btn = document.getElementById("menuBtn");
+
+        mobileNav.classList.toggle('open');
+        overlay.classList.toggle('show');
+
+        // Mostrar/ocultar el botón según el estado del menú
+        if (mobileNav.classList.contains('open')) {
+            btn.classList.add("hidden"); // Oculta cuando el menú está abierto
+        } else {
+            btn.classList.remove("hidden"); // Muestra cuando el menú está cerrado
+        }
+    }
+</script>
+
+
+
+
+</body>
+</html>
