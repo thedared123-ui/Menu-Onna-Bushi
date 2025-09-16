@@ -1,0 +1,142 @@
+/* Fuente básica */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    background: url("../img/fondo.webp") no-repeat center center;
+    background-size: cover;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Contenedor central */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+
+}
+
+.fondodetras {
+  position: absolute;         /* Se queda fijo en la pantalla */
+  left: 0;
+  width:100%;
+  height: 100%;            /* Ocupa toda la pantalla */
+  object-fit: cover;       /* Ajusta la imagen al tamaño sin deformarse */
+  z-index: -1;             /* Se coloca detrás de todo */
+  opacity: 0.5;
+}
+
+
+/* Logo */
+.logo {
+    width: 240px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Título */
+.titulo {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 15px;
+  margin: 10px 0 20px 0;
+}
+
+u{
+    text-decoration-color: #A98F69;
+    text-decoration-thickness: 1px; /* grosor del subrayado */
+    text-underline-offset: 10px;     /* distancia de la línea al texto */
+}
+
+/* Botón menú */
+.btn-menu {
+  display: inline-block;
+  background: #9f2524;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 15px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border: 4px #fff dashed;
+    box-shadow: 5px 5px 20px rgba(199, 202, 4, 0.4);
+
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-menu:hover {
+  background: #9f2524;
+}
+
+/* Horario */
+.horario {
+  font-size: 2rem;
+  color: #d1bda4;
+  margin: 15px 0;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Ubicación */
+.ubicacion {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Teléfono */
+.telefono {
+  font-size: 1rem;
+  margin-top: 10px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .logo{
+    width: 150px;
+  }
+
+  .titulo {
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+
+  .btn-menu {
+    font-size: 30px;
+    padding: 10px;
+    height: 30px;
+  }
+
+  .horario {
+    font-size: 20px;
+  }
+
+  .ubicacion{
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .telefono {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Sushi Delicioso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/img/icono.webp" type="image/webp">
+    <link rel="stylesheet" href="../css/stylesMenu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body class="text-white">
+    <!-- Mobile Overlay -->
+    <div class="overlay" onclick="toggleMobileNav()"></div>
+    <!-- Mobile Nav Button -->
+    <button id="menuBtn" class="mobile-nav-button md:hidden" onclick="toggleMobileNav()">☰ Menú</button>
+
+    <!-- Mobile Nav Menu -->
+    <nav class="mobile-nav">
+        <img class="menulogo" src="../img/logo.webp" alt="onna bushi">
+        <div class="titulomenu">
+            <h1>ONNA BUSHI</h1>
+            <button class="cerrarmenu" onclick="toggleMobileNav()">x</button>
+        </div>
+        <ul>
+            <li><a href="../html/entradas.html" onclick="toggleMobileNav()">Entrantes</a></li>
+            <li><a href="../html/rollos.html" onclick="toggleMobileNav()">Rollos</a></li>
+            <li><a href="../html/ramen.html" onclick="toggleMobileNav()">Ramen</a></li>
+            <li><a href="../html/combinaciones.html" onclick="toggleMobileNav()">Combinaciones</a></li>
+            <li><a href="../html/promo.html">Promo</a></li>
+            <li><a href="../html/bebidas.html" onclick="toggleMobileNav()">Bebidas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Desktop Vertical Nav -->
+    <nav class="vertical-nav md:block">
+        <img class="menulogo" src="../img/logo.webp" alt="onna bushi">
+        <div class="titulomenu">
+            <h1>ONNA BUSHI</h1>
+        </div>
+        <ul>
+            <li><a href="../html/entradas.html">Entrantes</a></li>
+            <li><a href="../html/rollos.html">Rollos</a></li>
+            <li><a href="../html/ramen.html">Ramen</a></li>
+            <li><a href="../html/combinaciones.html">Combinaciones</a></li>
+            <li><a href="../html/promo.html">Promo</a></li>
+            <li><a href="../html/bebidas.html">Bebidas</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

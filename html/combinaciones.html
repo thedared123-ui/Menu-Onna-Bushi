@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Sushi Delicioso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/img/icono.webp" type="image/webp">
+    <link rel="stylesheet" href="../css/stylesMenu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <style>
+        body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: url("../img/fentradas.webp");
+    background-size: cover;
+        }
+
+        .container .front{
+            margin-top: 20px;
+            padding-left: 25px;
+        }
+
+        .plato{
+            height: 450px;
+            margin-top: 80px;
+        }
+
+        ul.plato {
+            background-image: url("../img/fondo.webp");
+        }
+        
+        .nombre{
+            margin-left: 15px;
+            color: #fff;
+        }
+
+        .nombrecom{
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 2px;
+            color: #fff;
+
+        }
+
+        .desc{
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .etiquetaprecio1{
+            position: absolute;
+            z-index: 1;
+            height: 130px;
+            top: 60px;
+            left: 230px;
+            transform: rotate(300deg);
+        }
+
+        .precionum1{
+            transform: rotate(3deg);
+            top: 95px;
+            left: 265px;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .etiquetaprecio2{
+            position: absolute;
+            z-index: 0;
+            height: 130px;
+            top: 920px;
+            left: 250px;
+            transform: rotate(300deg);
+        }
+
+        .precionum2{
+            transform: rotate(3deg);
+            top: 955px;
+            left: 290px;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .container .front2 {
+            margin-top: 30px;
+            max-width: 75%;
+        position: relative;
+        z-index: 1;   /* detrás */
+    }
+    </style>
+</head>
+<body class="text-white">
+    
+    <!--MENU-->
+    <script src="../partials/js/scripts.js"></script>
+    <div data-include="../partials/menu.html"></div>
+    
+    <header>
+        <div>
+            <h1 style="font-size: 34px;" class="titulo">COMBINACIONES</h1>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!--COMBINACION ONNURI-->
+            <h2 style="margin-top: 10px;" class="subtitulo titulo">COMBINACION ONNURI</h2>
+
+            <div>
+                <img class="promo-img back" src="../img/icono.webp" alt="onna bushi">
+                <img class="front" src="../img/COMBINACIONES/combinaciononnori.webp" alt="combinacion onnuri">
+            </div>
+
+            <img class="etiquetaprecio1" src="../img/COMBINACIONES/precio.webp" alt="precio $16,5">
+            <p class="etiquetaprecio1 precionum1">$ 16.50 <br><p style="font-weight: normal; font-size: 15px; top: 120px;" class="etiquetaprecio1 precionum1">15 bocados</p></p>
+
+            <ul style="height: 460px;" class="plato">
+                <div class="info">
+                <h2 style="color: #fff; margin-left: 5px;" class="nombre">COMBINACION ONNURI</h2>
+                <h2 style="color: #fff;" class="nombre">$ 16,50 </h2>
+            </div>
+                <li class="licom">
+                    <h2 class="nombre nombrecom">GRATINADO ROLL</h2>
+                    
+                    <div>
+                    <p class="desc">
+                        Rollo tempurizado, cangrejo, queso crema, aguacate mix de pulpo y salsa de la casa gratinada y puntos de caviar.
+                    </p>
+                </div>
+                </li>
+
+                <li class="licom">
+                    <h2 class="nombre nombrecom">CEVICHE ROLL</h2>
+                    <div>
+                        <p class="desc">
+                            Rollo tempurizado, queso crema, aguacate, mix de ceviche, chips de verde, brunua de ají criollo y cilantro.
+                        </p>
+                    </div>
+                </li>
+
+                <li style="border-bottom: transparent 0 solid; padding-bottom: 40px;" class="licom">
+                    <h2 class="nombre nombrecom">WAKAMOLE ROLL</h2>
+                    <div>
+                        <p class="desc">
+                            Rollo tempurizado, cangrejo queso crema, aguacate, guacamole japonés, crocante de maíz y brunua de ají criollo y cilantro.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
+
+            <!--COMBINACION FUJI-->
+            <h2 class="subtitulo titulo">COMBINACION FUJI</h2>
+
+            <div>
+                <img class="front2" src="../img/COMBINACIONES/combinacionfuji.webp" alt="combinacion onnuri">
+            </div>
+
+            <img class="etiquetaprecio2" src="../img/COMBINACIONES/precio.webp" alt="precio $16,5">
+            <p class="etiquetaprecio2 precionum2">$ 18.99<br><p style="font-weight: normal; font-size: 15px; left: 285px; top: 980px;" class="etiquetaprecio1 precionum1">17 bocados</p></p>
+
+            <ul style="margin-top: 30px; height: 700px;" class="plato">
+                <div class="info">
+                <h2 style="color: #fff; margin-left: 5px;" class="nombre">COMBINACION FUJI</h2>
+                <h2 style="color: #fff;" class="nombre">$ 18,99</h2>
+            </div>
+                <li class="licom">
+                    <h2 class="nombre nombrecom">GRATINADO ROLL</h2>
+                    
+                    <div>
+                    <p class="desc">
+                        Rollo tempurizado, cangrejo, queso crema, aguacate mix de pulpo y salsa de la casa gratinada y puntos de caviar.
+                    </p>
+                </div>
+                </li>
+
+                <li class="licom">
+                    <h2 class="nombre nombrecom">PANKO ROLL</h2>
+                    <div>
+                    <p class="desc">
+                        Rollo tempurizado, relleno de sunimi con salsa de la casa, queso crema, aguacate.
+                    </p>
+                </div>
+                </li>
+
+                <li class="licom">
+                    <h2 class="nombre nombrecom">HAWAII ROLL</h2>
+                    <div>
+                    <p class="desc">
+                        Rollo tempurizado, cangrejo queso crema, aguacate, mix de calamar y piña salsa hawai y ajonjoli
+                    </p>
+                </div>
+                </li>
+
+                <li class="licom">
+                    <h2 style="font-size: 11px;" class="nombre nombrecom">ESFERAS DE CANGREJO GRATINADAS</h2>
+                    <div>
+                        <p class="desc">
+                            2 esferas tempurizadas de 25g de cangrejo con salsa de la casa, relleno de queso crema, gratinadas y caviar.
+                        </p>
+                    </div>
+                </li>
+
+                <li style="border-bottom: transparent 0 solid; padding-bottom: 100px;" class="licom">
+                    <h2 class="nombre nombrecom">ENSALADA WAKANI</h2>
+                    <div>
+                        <p class="desc">
+                            Julianas de vegetales, alga wakame y Kami kama, caviar de pez volador.
+                        </p>
+                    </div>
+                </li>
+            </ul>  
+    </div>
+
+    
+
+
+    
+
+
+
+
+</body>
+</html>
