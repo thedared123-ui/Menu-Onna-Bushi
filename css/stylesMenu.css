@@ -67,7 +67,7 @@
 }
 
 .plato{
-    border: #fff 3px dashed;
+    border: #fff 3px solid;
     border-radius: 20px;
     height: 180px;
     width: 85%;
@@ -521,4 +521,5 @@ button :hover{
         .maduro{
             height: 215px;
         }
+
     }
