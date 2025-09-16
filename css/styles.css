@@ -61,11 +61,11 @@ u{
 .btn-menu {
   display: inline-block;
   background: #9f2524;
-  color: white;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   font-size: 20px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 12px;
   margin: 15px 0;
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
@@ -119,12 +119,6 @@ u{
   .titulo {
     font-size: 60px;
     letter-spacing: 5px;
-  }
-
-  .btn-menu {
-    font-size: 3%;
-    padding: 10px;
-    height: 30px;
   }
 
   .horario {
