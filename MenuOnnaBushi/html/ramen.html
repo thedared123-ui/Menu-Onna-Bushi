@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onna Bushi Ramen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/img/icono.webp" type="image/webp">
+    <link rel="stylesheet" href="../css/stylesMenu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S2V1GXETE0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-S2V1GXETE0');
+    </script>
+
+    <style>
+        body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: url("../img/fentradas.webp");
+    background-size: cover;
+        }
+
+        /* Contenedor central */
+.container {
+  flex-direction: row;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* efecto oscuro sobre fondo */
+}
+
+    .archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+    .encabezado {
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;     /* centra verticalmente */
+    margin-top: 20px;
+}
+    .iconor{
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .titulor{
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .nuevo{
+        text-align: center;
+        line-height: 65px;
+        font-size: 60px;
+        position: relative;
+        z-index: 1;
+
+        font-weight: bold;
+        
+    }
+
+    .pnuevo{
+        color: #9f2524;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .dramen{
+        font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    }
+
+    .ramen2{
+        letter-spacing: 20px;
+        -webkit-text-stroke: 3px #9f2524;
+        color: transparent;
+    }
+
+    .label {
+      position: absolute;
+      font-size: 10px;
+      font-family: "Archivo Black", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+    }
+
+    /* Posiciones personalizadas */
+    .huevo {
+        top: 375px;
+        left: 5px;
+    }
+    .goya  {
+        top: 450px;
+        left: 85px;
+    }
+    .naruto {
+        top: 250px;
+        left: 15px;
+    }   
+    .alga {
+        top: 235px;
+        right: 30px;
+    }
+    .carne {
+        top: 335px;
+        right: 25px;
+        line-height: 1;
+    }
+    .hongos {
+        top: 455px;
+        right: 45px;
+    }
+
+    .sello {
+      background: #9f2524;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      clip-path: polygon(
+        50% 0%, 61% 12%, 75% 6%, 85% 18%, 
+        100% 25%, 93% 39%, 100% 50%, 93% 61%, 
+        100% 75%, 85% 82%, 75% 94%, 61% 88%, 
+        50% 100%, 39% 88%, 25% 94%, 15% 82%, 
+        0% 75%, 7% 61%, 0% 50%, 7% 39%, 
+        0% 25%, 15% 18%, 25% 6%, 39% 12%
+      );
+      margin-left: 150px;
+      margin-top: -50px;
+       position: relative;
+        z-index: 2;   /* detrás */
+        font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+    }
+
+    .sello span {
+      font-size: 20px;
+      vertical-align: super;
+      margin-left: 2px;
+    }
+    </style>
+</head>
+<body class="text-white">
+
+<!--MENU-->
+    <div data-include="../partials/menu.html"></div>
+
+    <div class="encabezado">
+            <img class="iconor" src="../img/icono.webp" alt="ONNA BUSHI">
+            <h1 class="titulor RAMEN">NNA BUSHI</h1>
+    </div>
+
+    <div class="container">
+        
+        <div class="container">
+            <div class="nuevo">
+                <h2 class="pnuevo">¡NUEVO!</h2>
+                <H2 class="dramen ramen1">RAMEN</H2>
+                <H2 class="dramen ramen2">RAMEN</H2>
+            </div>
+            <img class="promo-img back" src="../img/icono.webp" alt="onna bushi">
+            <img class="front" src="../img/RAMEN/ramen.webp" alt="ramen">
+            <div class="label huevo">Huevo</div>
+            <div class="label goya">Gyoza</div>
+            <div class="label naruto">Naruto</div>
+            <div class="label alga">Alga</div>
+            <div class="label carne">Rolleta <br> de cerdo</div>
+            <div class="label hongos">Champiñones</div>
+
+        <div class="sello">
+            $6,99<span>*</span>
+        </div>
+        </div>
+    </div>
+    
+    </div>
+
+    <script src="../partials/js/scripts.js"></script>
+</body>
+</html>
