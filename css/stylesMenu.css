@@ -68,7 +68,7 @@
 
 .plato{
     border: #fff 3px solid;
-    border-radius: 20px;
+    border-radius: 24px;
     height: 180px;
     width: 85%;
     margin: 30px auto;
@@ -94,7 +94,7 @@
     border-radius: 20px 20px 0 0;
     background-color: #9f2524;
     margin-bottom: 10px;
-    border-bottom: #fff 2px dashed;
+    border-bottom: #fff 2px solid;
 }
 
 .desc{
@@ -183,7 +183,7 @@ button :hover{
 }
 
 .licom{
-    border-bottom: #fff 3px dashed;
+    border-bottom: #fff 3px solid;
 }
 
 
@@ -433,12 +433,8 @@ button :hover{
             width: 90%;
             margin-left: 20px;
             height: 190px;
-            border: #fff 2px dashed;
         }
 
-        .licom{
-            border-bottom: #fff 2px dashed;
-        }
         .nombre{
             font-size: 12px;
             font-weight: bold;
@@ -463,9 +459,6 @@ button :hover{
             font-size: 20px;
         }
 
-        .licom{
-            border-bottom: #fff 3px dashed;
-        }
         .nombre{
             font-weight: bold;
         }
@@ -491,7 +484,7 @@ button :hover{
         }
         
         .gratinado{
-            height: 215px;
+            height: 240px;
         }
         
         .wakamole{
@@ -521,5 +514,4 @@ button :hover{
         .maduro{
             height: 215px;
         }
-
     }

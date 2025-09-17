@@ -49,9 +49,8 @@
         }
 
     .container{
-        border-bottom: #ba9c49 1px solid;
         margin-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.6); /* efecto oscuro sobre fondo */
+        background-color: rgba(0, 0, 0, 0.6); /* efecto oscuro sobre fondo */
         
     }
 
@@ -130,30 +129,26 @@
 
     .rollos{
         width: 350px;
-        border: #fff 2px dashed;
-        border-bottom: none;
     }
 
     .rollosnombres{
         margin-top: 5px;
         font-weight: bold;
         font-size: 9px;
-        border: #FFF 2px solid;
         width: 350px;
         margin: 0 auto;
     }
     
     .roll{
         margin-right: 10px;
-        font-family: "Pacifico", cursive;
+        font-family: "Archivo Black", sans-serif;
         font-weight: 400;
         font-style: normal;
-        border-right: #FFF 2px solid;
     }
 
     .unidadesp{
         color: #FFF;
-        font-family: "Pacifico", cursive;
+        font-family: "Archivo Black", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 15px;
@@ -264,12 +259,12 @@
         }
 
     .dosporuno{
-        font-family: "Tagesschrift", system-ui;
-        font-weight: bold;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
         font-style: normal;
+        -webkit-text-stroke: 1px #000;
         font-size: 20px;
-        letter-spacing: 1px;
-        color: #ec6363;
+        color: #ff5c5c;
         margin-top: 20px;
 
         position: relative;
@@ -301,7 +296,7 @@
         padding-right: 10px;
         position: relative;
         z-index: 1;
-        font-family: "Pacifico", cursive;
+        font-family: "Archivo Black", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 19px;
@@ -371,7 +366,7 @@
     }
 
     .in{
-        font-family: "Pacifico", cursive;
+        font-family: "Archivo Black", sans-serif;
         font-weight: 400;
         font-style: normal;
 
@@ -407,46 +402,46 @@
         <P class="rollosselec">EN CUATRO ROLLOS SELECCIONADOS</P>
     </div>
 
-    <div class="encabezado">
+    <div style="position: relative; z-index: 1;" class="encabezado">
         <img class="rollos" src="../img/ROLLOS/promorollos.webp" alt="panko rol">
     </div>
 
-    <div class="rollosnombres encabezado">
+    <div style="position: relative; z-index: 1;" class="rollosnombres encabezado">
         <p style="margin-left: 10px;" class="roll">PANKO ROLL</p>
         <P class="waka roll">WAKAMOLE ROLL</P>
         <P style="margin-left: 10px;" class="roll">CEVICHE ROLL</Pc>
         <P style="border-right: none;" class="hannaroll roll">HANNA ROLL</P>
     </div>
 
-    <div class="encabezado">
+    <div style="position: relative; z-index: 1;" class="encabezado">
         <div class="bocados encabezado">
             <p class="unidadesp">10 BOCADOS</p>
             <p class="precio">6,75 $</p>
         </div>
     </div>
 
-    <div class="encabezado">
+    <div style="position: relative; z-index: 1;" class="encabezado">
         <div class="bocados encabezado">
             <p class="unidadesp">20 BOCADOS</p>
             <p class="precio">13.0 $</p>
         </div>
     </div>
 
-    <div class="encabezado">
+    <div style="position: relative; z-index: 1;" class="encabezado">
         <div class="bocados encabezado">
             <p class="unidadesp">30 BOCADOS</p>
             <p class="precio">19,5 $</p>
         </div>
     </div>
 
-    <div class="encabezado">
+    <div style="position: relative; z-index: 1;" class="encabezado">
         <div class="bocados encabezado">
             <p class="unidadesp">40 BOCADOS</p>
             <p class="precio">26.0 $</p>
         </div>
     </div>
 
-    <div class="encabezado">
+    <div style="position: relative; z-index: 1;" class="encabezado">
         <div class="bocados encabezado">
             <p class="unidadesp">50 BOCADOS</p>
             <p class="precio">30.0 $</p>
@@ -456,7 +451,7 @@
     <div class="encabezado">
         <div>
             <p class="precioi">-Precios con promocion incluida-</p>
-            <p class="hora">3pm A 22:30pm</p>
+            <p class="hora">4pm A 22:30pm</p>
         </div>
     </div>
 
@@ -466,6 +461,9 @@
             <p class="numero">096 707 2218</p>
         </div>
     </div>
+
+    
+    <img class="promo-img back" src="../img/logo.webp" alt="onna bushi">
 </div>
 
 
@@ -504,30 +502,6 @@
         </div>
         
         <div>
-            <ul style="height: 300px;" class="plato">
-                <div class="info">
-                <h2 style="color: #fff; margin-left: 5px;" class="nombre">PROMO ONNA</h2>
-                <h2 style="color: #fff;" class="nombre">$ 14,0 </h2>
-            </div>
-                <li class="licom">
-                    <h2 class="nombre nombrecom">GRATINADO ROLL</h2>
-                    
-                    <div>
-                    <p class="desc">
-                        Rollo tempurizado, cangrejo, queso crema, aguacate mix de pulpo y salsa de la casa gratinada y puntos de caviar.
-                    </p>
-                </div>
-                </li>
-
-                <li style="border-bottom: none;" class="licom">
-                    <h2 class="nombre nombrecom">CEVICHE ROLL</h2>
-                    <div>
-                        <p class="desc">
-                            Rollo tempurizado, queso crema, aguacate, mix de ceviche, chips de verde, brunua de ají criollo y cilantro.
-                        </p>
-                    </div>
-                </li>
-            </ul>
             <div class="encabezado">
             <div>
                 <p class="conta">096-707-2218</p>
@@ -543,7 +517,7 @@
 
 
 
-    <div style="border-bottom: none; border-top: #ba9c49 1px solid; margin-top: 100px;" class="container">
+    <div style="border-bottom: none; border-top: #ba9c49 1px solid; margin-top: -140px;" class="container">
         <div class="prov">
             <p class="dia">Viernes</p>
             <p class="promov">PROMO</p>
